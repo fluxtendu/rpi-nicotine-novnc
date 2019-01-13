@@ -11,14 +11,13 @@ The goal is to have nicotine+ running on a RPI and access it via web.
 ##### Using Docker CLI
 ```
 docker run -d --name nicotine --restart=always \
--v "/persistent/appdata":"/root/.SoulseekQt" \
--v "/persistent/logs":"/root/Soulseek Chat Logs" \
--v "[your_host_music file]":"/root/nicotine" \
+-v "[your_host_wanted_logs_save]":"/root/.nicotine/logs" \
+-v "[your_host_music_directory]":"/root/nicotine" \
 -e resolution=1280x720 \
 -p 6080:6080 \
 kokmok/rpi-nicotine-novnc:latest
 ```
 
 Just go to http://IP_OF_PI:6080
-You'll have to choose /root/nicotine in the nicotiune GUI on first start
+You'll have to choose /root/nicotine as download folder in the nicotiune GUI on first start
 
