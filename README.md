@@ -19,5 +19,6 @@ docker run -d --name nicotine --restart=always \
 kokmok/rpi-nicotine-novnc:latest
 ```
 
+Just go to http://IP_OF_PI:6080
 You'll have to choose /root/nicotine in the nicotiune GUI on first start
 
