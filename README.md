@@ -2,7 +2,7 @@
 
 # Nicotine for raspberry pi
 
-this is a fork of https://github.com/michaelmiklis/docker-rpi-monitor and this is the really first version that need some cleaning. 
+this is a fork of https://github.com/michaelmiklis/docker-rpi-monitor (they did all the work) and this is the really first version that need some cleaning. 
 
 The goal is to have nicotine+ running on a RPI and access it via web. 
 
