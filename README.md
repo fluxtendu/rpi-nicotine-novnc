@@ -1,4 +1,4 @@
-![](https://i.snag.gy/8dpAbV.jpg)
+![](https://i.snag.gy/amPTGo.jpg)
 
 # Nicotine for raspberry pi
 
