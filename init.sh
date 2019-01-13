@@ -26,7 +26,7 @@ priority=400
 
 [program:soulseek]
 environment=HOME="/root",DISPLAY=":1",USER="root"
-command=/squashfs-root/SoulseekQt
+command=nicotine
 autorestart=true
 priority=500" > /etc/supervisord.conf
 /usr/bin/supervisord -c /etc/supervisord.conf
