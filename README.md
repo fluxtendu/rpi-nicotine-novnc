@@ -11,7 +11,7 @@ The goal is to have nicotine+ running on a RPI and access it via web.
 ##### Using Docker CLI
 ```
 docker run -d --name nicotine --restart=always \
--v "[your_host_wanted_logs_save]":"/root/.nicotine/logs" \
+-v "[your_host_wanted_logs_save_directory]":"/root/.nicotine/logs" \
 -v "[your_host_music_directory]":"/root/nicotine" \
 -e resolution=1280x720 \
 -p 6080:6080 \
