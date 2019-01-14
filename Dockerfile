@@ -1,4 +1,5 @@
 FROM resin/rpi-raspbian:latest
+COPY qemu-arm-static /usr/bin
 copy ui.patch /tmp
 run apt-get update && \
  apt-get upgrade -y && \
