@@ -1,7 +1,8 @@
 FROM resin/rpi-raspbian:latest
 COPY qemu-arm-static /usr/bin
 copy ui.patch /tmp
-run apt-get update && \
+run echo 'deb [trusted=yes target=Packages] http://buildbot.le-vert.net/pkgs/nicotine-plus/jessie/latest/ ./' >> /etc/apt/sources.list && \
+ apt-get update && \
  apt-get upgrade -y && \
  apt-get install -y binutils curl locales net-tools openbox patch supervisor x11vnc xvfb && \
  locale-gen en_US.UTF-8 && \
