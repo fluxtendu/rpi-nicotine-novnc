@@ -20,6 +20,6 @@ kokmok/rpi-nicotine-novnc:latest
 ```
 
 Just go to http://IP_OF_PI:6080
-### To not forget :
+### Do not forget :
 You'll have to choose /root/nicotine_downloads as download folder in the nicotine GUI settings window on first start
 
