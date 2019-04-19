@@ -3,8 +3,9 @@ COPY qemu-arm-static /usr/bin
 copy ui.patch /tmp
 run apt-get update && \
  apt-get upgrade -y && \
- apt-get install -y binutils curl locales net-tools openbox patch supervisor x11vnc xvfb && \
+ apt-get install -y binutils curl locales net-tools openbox patch supervisor x11vnc xvfb python2.7 gtk2.0 python-gtk2 && \
  locale-gen en_US.UTF-8 && \
+ sudo pip2 install mutagen && \
  mkdir /usr/share/novnc && \
  curl -fL# https://github.com/novnc/noVNC/archive/master.tar.gz -o /tmp/novnc.tar.gz && \
  tar -xf /tmp/novnc.tar.gz --strip-components=1 -C /usr/share/novnc && \
